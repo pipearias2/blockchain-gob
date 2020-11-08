@@ -6,7 +6,7 @@ using System.Text;
 
 namespace blockchainGob.Entities
 {
-    public class Complaint : Entity<long>, IAudited
+    public class Complaint : Entity<Guid>, IAudited
     {
         public string Applicant { get; set; }
         public string Defendant { get; set; }
