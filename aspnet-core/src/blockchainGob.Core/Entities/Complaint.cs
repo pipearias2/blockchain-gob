@@ -11,6 +11,7 @@ namespace blockchainGob.Entities
         public string Applicant { get; set; }
         public string Defendant { get; set; }
         public TypeProcess TypeProcess { get; set; } = TypeProcess.Family;
+        //public string Transaction { get; set; }
         public long? CreatorUserId { get; set; }
         public DateTime CreationTime { get; set; }
         public long? LastModifierUserId { get; set; }
