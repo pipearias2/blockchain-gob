@@ -12,6 +12,7 @@ namespace blockchainGob.Services.Complaint
     {
         public string Applicant { get; set; }
         public string Defendant { get; set; }
+        //public string Transaction { get; set; }
         public TypeProcess TypeProcess { get; set; } = TypeProcess.Family;
     }
 }
