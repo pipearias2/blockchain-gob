@@ -4,6 +4,6 @@ El Back del proyecto está construido con https://github.com/aspnetboilerplate/a
 
 El Front en Angular
 
-La red de bloque está construida en Kaleido
+La red de bloques está construida en Kaleido
 
 @author Samuel Cudirz y Juan Arias
