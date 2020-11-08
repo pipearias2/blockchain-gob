@@ -1,0 +1,68 @@
+<form
+  class="form-horizontal"
+  autocomplete="off"
+  #createRoleForm="ngForm"
+  (ngSubmit)="save()"
+>
+  <abp-modal-header
+    [title]="'Crear Nueva Demanda' | localize"
+    (onCloseClick)="bsModalRef.hide()"
+  ></abp-modal-header>
+  <div class="modal-body">
+    <tabset>
+      <tab [heading]="'Crear' | localize" class="pt-3 px-2">
+        <div class="form-group row required">
+          <label class="col-md-3 col-form-label" for="name">
+            {{ "Demandante" | localize }}
+          </label>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              name="applicant"
+              id="applicant"
+              required
+              minlength="2"
+              maxlength="32"
+              [(ngModel)]="demandas.applicant"
+              #applicantModel="ngModel"
+              #applicantEl
+            />
+            <abp-validation-summary
+              [control]="applicantModel"
+              [controlEl]="applicantEl"
+            ></abp-validation-summary>
+          </div>
+        </div>
+        <div class="form-group row required">
+          <label class="col-md-3 col-form-label" for="displayName">
+            {{ "Demandado" | localize }}
+          </label>
+          <div class="col-md-9">
+            <input
+              type="text"
+              class="form-control"
+              name="defendantName"
+              id="defendantName"
+              required
+              minlength="2"
+              maxlength="32"
+              [(ngModel)]="demandas.defendant"
+              #defendantModel="ngModel"
+              #defendantEl
+            />
+            <abp-validation-summary
+              [control]="createRoleForm"
+              [controlEl]="defendantEl"
+            ></abp-validation-summary>
+          </div>
+        </div>
+      </tab>
+    </tabset>
+  </div>
+  <abp-modal-footer
+    [cancelDisabled]="saving"
+    [saveDisabled]="!createRoleForm.form.valid || saving"
+    (onCancelClick)="bsModalRef.hide()"
+  ></abp-modal-footer>
+</form>

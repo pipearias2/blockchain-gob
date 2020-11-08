@@ -64,7 +64,7 @@ export class SidebarMenuComponent extends AppComponentBase implements OnInit {
       ),
       new MenuItem(
         'Demandas',
-        '/app/roles',
+        '/app/demandas',
         'fas fa-theater-masks',
         'Pages.Roles'
       ),

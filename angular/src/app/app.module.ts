@@ -22,6 +22,9 @@ import { EditTenantDialogComponent } from './tenants/edit-tenant/edit-tenant-dia
 import { RolesComponent } from '@app/roles/roles.component';
 import { CreateRoleDialogComponent } from './roles/create-role/create-role-dialog.component';
 import { EditRoleDialogComponent } from './roles/edit-role/edit-role-dialog.component';
+// demandas
+import { DemandasComponent } from '@app/demandas/demandas.component';
+import { CreateDemandasDialogComponent } from './demandas/create-demandas/create-demandas-dialog.component';
 // users
 import { UsersComponent } from '@app/users/users.component';
 import { CreateUserDialogComponent } from '@app/users/create-user/create-user-dialog.component';
@@ -52,6 +55,9 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     RolesComponent,
     CreateRoleDialogComponent,
     EditRoleDialogComponent,
+    // demanfas
+    DemandasComponent,
+    CreateDemandasDialogComponent,
     // users
     UsersComponent,
     CreateUserDialogComponent,
@@ -92,6 +98,8 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     // roles
     CreateRoleDialogComponent,
     EditRoleDialogComponent,
+    // demandas
+    CreateDemandasDialogComponent,
     // users
     CreateUserDialogComponent,
     EditUserDialogComponent,
