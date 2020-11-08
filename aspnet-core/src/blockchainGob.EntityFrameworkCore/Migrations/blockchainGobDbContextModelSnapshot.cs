@@ -1514,10 +1514,9 @@ namespace blockchainGob.Migrations
 
             modelBuilder.Entity("blockchainGob.Entities.Complaint", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Applicant")
                         .HasColumnType("nvarchar(max)");

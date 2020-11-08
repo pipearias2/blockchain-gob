@@ -11,8 +11,7 @@ namespace blockchainGob.Migrations
                 name: "Complaint",
                 columns: table => new
                 {
-                    Id = table.Column<long>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<Guid>(nullable: false),
                     Applicant = table.Column<string>(nullable: true),
                     Defendant = table.Column<string>(nullable: true),
                     TypeProcess = table.Column<int>(nullable: false),

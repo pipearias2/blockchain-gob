@@ -10,7 +10,7 @@ using blockchainGob.EntityFrameworkCore;
 namespace blockchainGob.Migrations
 {
     [DbContext(typeof(blockchainGobDbContext))]
-    [Migration("20201108044932_complaint")]
+    [Migration("20201108123432_complaint")]
     partial class complaint
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1516,10 +1516,9 @@ namespace blockchainGob.Migrations
 
             modelBuilder.Entity("blockchainGob.Entities.Complaint", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Applicant")
                         .HasColumnType("nvarchar(max)");

@@ -8,7 +8,7 @@ using System.Text;
 namespace blockchainGob.Services.Complaint
 {
     [AutoMap(typeof(Entities.Complaint))]
-    public class ComplaintDto: EntityDto<long>
+    public class ComplaintDto: EntityDto<Guid>
     {
         public string Applicant { get; set; }
         public string Defendant { get; set; }
