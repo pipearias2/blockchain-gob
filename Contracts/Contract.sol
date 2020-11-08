@@ -4,7 +4,6 @@ contract Contract {
     
     string public guid;
     
-    
     constructor(string newGuid) public{
         guid = newGuid;
     }
