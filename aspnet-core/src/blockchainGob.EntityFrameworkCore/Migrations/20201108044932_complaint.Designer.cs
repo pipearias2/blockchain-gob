@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using blockchainGob.EntityFrameworkCore;
 
 namespace blockchainGob.Migrations
 {
     [DbContext(typeof(blockchainGobDbContext))]
-    partial class blockchainGobDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201108044932_complaint")]
+    partial class complaint
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
